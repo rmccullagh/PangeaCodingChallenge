@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Pangea.Coding.Challenge.Models.GitHubRepository>
+
+@{
+    ViewData["Title"] = "Pangea Assignement";
+}
+
+<div class="row page-header">
+    <div class="col-lg-12">
+        <table class="table table-bordered table-bordered table-striped table-hover table-responsive">
+            <thead>
+                <tr>
+                    <th>Repo Name</th>
+                    <th>Language</th>
+                    <th>Avatar</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var repo in ViewData["Repositories"] as List<Pangea.Coding.Challenge.Models.GitHubRepository>)
+                {
+                <tr>
+                    <td>
+                        <a href="@repo.html_url">@repo.name</a>
+                    </td>
+                    <td>
+                        @repo.language
+                    </td>
+                    <td>
+                        <img width="75" height="75" src="@repo.owner.avatar_url" />
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
