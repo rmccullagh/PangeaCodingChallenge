@@ -12,7 +12,15 @@ install it.
 git clone https://github.com/rmccullagh/PangeaCodingChallenge.git
 cd PangeaCodingChallenge/src/Pengea.Coding.Challenge
 dotnet restore
+dotnet ef migrations add MyMigration
+dotnet ef database update
 dotnet run
 ```
+Navigation to http://localhost:5000
 
-This will run the initial migrations so it will take a few seconds to respond as you then navigate to http://localhost:5000
+# Features Implemented
+The Load Data feature will read and write data from the Github API and
+save it a local database.
+
+The Purge Data feature will delete all rows in the database, so the user
+can see the table without any data, and invoke the first feature implemented.
