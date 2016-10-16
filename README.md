@@ -10,7 +10,7 @@ install it.
 # Build & Run
 ```
 git clone https://github.com/rmccullagh/PangeaCodingChallenge.git
-cd PangeaCodingChallenge
+cd PangeaCodingChallenge/src/Pengea.Coding.Challenge
 dotnet restore
 dotnet run
 ```
