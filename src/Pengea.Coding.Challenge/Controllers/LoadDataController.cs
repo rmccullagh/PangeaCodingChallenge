@@ -27,7 +27,7 @@ namespace Pangea.Coding.Challenge.Controllers
                 GithubClient githubClient = new GithubClient();
 
                 // populate the data from the GitHub API
-                foreach(GitHubRepository repo in await githubClient.FetchRepositories())
+                foreach(GitHubRepository repo in await githubClient.FetchRepositories("orgs/gopangea/repos"))
                 {
                     _context.Repositories.Add(repo);
                 }

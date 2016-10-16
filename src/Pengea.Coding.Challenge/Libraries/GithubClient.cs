@@ -9,18 +9,18 @@ namespace Pangea.Coding.Challenge.Libraries
 {
     public class GithubClient
     {
-        private Task<HttpResponseMessage> _getRepositoryData()
+        private Task<HttpResponseMessage> _getRepositoryData(string owner)
         {
             HttpClient httpClient = new HttpClient();
             httpClient.BaseAddress = new Uri("https://api.github.com/");
             httpClient.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0");
 
-            return httpClient.GetAsync("orgs/gopangea/repos");
+            return httpClient.GetAsync(owner);
         }
 
-        public async Task<List<GitHubRepository>> FetchRepositories()
+        public async Task<List<GitHubRepository>> FetchRepositories(string owner)
         {
-            HttpResponseMessage response = await _getRepositoryData();
+            HttpResponseMessage response = await _getRepositoryData(owner);
             List<GitHubRepository> repos = new List<GitHubRepository>();
 
             if (response.IsSuccessStatusCode)
