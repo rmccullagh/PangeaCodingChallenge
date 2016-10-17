@@ -7,7 +7,7 @@ using Pangea.Coding.Challenge.Models;
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace Pengea.Coding.Challenge.Controllers
+namespace Pangea.Coding.Challenge.Controllers
 {
     public class PurgeDataController : Controller
     {

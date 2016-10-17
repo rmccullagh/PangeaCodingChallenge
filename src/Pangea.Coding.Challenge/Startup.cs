@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Pangea.Coding.Challenge.Models;
 using Microsoft.EntityFrameworkCore;
-using Pengea.Coding.Challenge.Libraries;
+using Pangea.Coding.Challenge.Libraries;
 
 namespace Pangea.Coding.Challenge
 {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Pangea.Coding.Challenge.Models;
 
-namespace Pengea.Coding.Challenge.Libraries
+namespace Pangea.Coding.Challenge.Libraries
 {
     public interface IGithubClient
     {

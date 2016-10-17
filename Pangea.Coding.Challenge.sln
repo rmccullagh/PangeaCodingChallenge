@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Pengea.Coding.Challenge", "src\Pengea.Coding.Challenge\Pengea.Coding.Challenge.xproj", "{99674E04-8054-49F3-9549-E80C7CC1F5B7}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Pangea.Coding.Challenge", "src\Pangea.Coding.Challenge\Pangea.Coding.Challenge.xproj", "{99674E04-8054-49F3-9549-E80C7CC1F5B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
