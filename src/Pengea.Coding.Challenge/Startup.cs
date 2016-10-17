@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Pangea.Coding.Challenge.Models;
 using Microsoft.EntityFrameworkCore;
+using Pengea.Coding.Challenge.Libraries;
 
 namespace Pangea.Coding.Challenge
 {
@@ -42,6 +39,9 @@ namespace Pangea.Coding.Challenge
 
             var connection = @"Server=(localdb)\mssqllocaldb;Database=Pangea.Coding.Challenge;Trusted_Connection=True;";
             services.AddDbContext<PangeaContext>(options => options.UseSqlServer(connection));
+
+            services.AddTransient<IGithubClient, GithubClient>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
