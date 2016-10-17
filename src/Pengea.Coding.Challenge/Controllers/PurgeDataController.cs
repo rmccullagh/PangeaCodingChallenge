@@ -12,7 +12,7 @@ namespace Pengea.Coding.Challenge.Controllers
 {
     public class PurgeDataController : Controller
     {
-        private PangeaContext _context;
+        private readonly PangeaContext _context;
 
         public PurgeDataController(PangeaContext context)
         {
