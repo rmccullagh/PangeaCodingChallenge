@@ -24,3 +24,6 @@ save it a local database.
 
 The Purge Data feature will delete all rows in the database, so the user
 can see the table without any data, and invoke the first feature implemented.
+
+# TODO
+Unit tests with NUnit
