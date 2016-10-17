@@ -4,9 +4,8 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Pangea.Coding.Challenge.Models;
-using Pengea.Coding.Challenge.Libraries;
 
-namespace Pangea.Coding.Challenge.Libraries
+namespace Pengea.Coding.Challenge.Libraries
 {
     public class GithubClient : IGithubClient
     {
