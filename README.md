@@ -10,7 +10,7 @@ install it.
 # Build & Run
 ```
 git clone https://github.com/rmccullagh/PangeaCodingChallenge.git
-cd PangeaCodingChallenge/src/Pengea.Coding.Challenge
+cd PangeaCodingChallenge/src/Pangea.Coding.Challenge
 dotnet restore
 dotnet ef migrations add MyMigration
 dotnet ef database update
