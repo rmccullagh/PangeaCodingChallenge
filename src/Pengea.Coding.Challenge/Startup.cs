@@ -41,7 +41,6 @@ namespace Pangea.Coding.Challenge
             services.AddDbContext<PangeaContext>(options => options.UseSqlServer(connection));
 
             services.AddTransient<IGithubClient, GithubClient>();
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
