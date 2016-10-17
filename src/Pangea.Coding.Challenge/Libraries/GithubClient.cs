@@ -26,7 +26,6 @@ namespace Pangea.Coding.Challenge.Libraries
             if (response.IsSuccessStatusCode)
             {
                 repos = await response.Content.ReadAsAsync<List<GitHubRepository>>();
-
             }
 
             return repos;
