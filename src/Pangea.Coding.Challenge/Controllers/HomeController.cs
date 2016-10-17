@@ -25,6 +25,7 @@ namespace Pangea.Coding.Challenge.Controllers
                     .ToList();
 
             ViewData["Repositories"] = repositories;
+
             return View();
         }
 
