@@ -10,7 +10,7 @@ namespace Pangea.Coding.Challenge.Controllers
 {
     public class HomeController : Controller
     {
-        private PangeaContext _context;
+        private readonly PangeaContext _context;
 
         public HomeController(PangeaContext context)
         {
