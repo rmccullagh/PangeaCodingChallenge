@@ -1,5 +1,6 @@
-.NET Core is required. Follow the instructions for your operating system to 
-install it.
+# Requirements
+- SQL Sever Local DB, which may or may not be shipped with .NET Core, 
+- .NET Core
 
 # Windows
 - https://www.microsoft.com/net/core#windows
