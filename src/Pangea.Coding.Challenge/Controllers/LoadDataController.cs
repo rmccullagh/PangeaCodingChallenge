@@ -6,8 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 using Pangea.Coding.Challenge.Models;
 using Pangea.Coding.Challenge.Libraries;
 
-// For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace Pangea.Coding.Challenge.Controllers
 {
     public class LoadDataController : Controller
