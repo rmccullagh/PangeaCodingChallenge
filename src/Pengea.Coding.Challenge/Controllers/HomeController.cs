@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Pangea.Coding.Challenge.Models;
-using Pangea.Coding.Challenge.Libraries;
 using Microsoft.EntityFrameworkCore;
 
 namespace Pangea.Coding.Challenge.Controllers
